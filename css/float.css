@@ -21,21 +21,23 @@ body{
 .wrapper{
  
   color: #051937;
-  width: 80%;
   margin: auto;
   font-family: 'Merriweather',Georgia, 'Times New Roman', Times, serif;
 }
 .container{
-  margin-top: 50%;;
+  width: 80%;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 h1{
   font-size: 5em;
   color: #00bf72;
-  margin-top: 100%;
+  /* margin-top: 100%; */
 }
 .navbar{
   background-color: #004d7a;
-  width: 80%;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
