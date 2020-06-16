@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Raleway:wght@600&display=swap');
 * {
 margin: 0;
 padding: 0;
@@ -5,39 +6,85 @@ font-size: 10px;
 box-sizing: border-box;
 }
 
+
 .clearfix:after{
   content: "";
   display: table;
   clear: both;
 
 }
+body{
+   background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+   background-repeat: no-repeat;
+   height: 100%;
+}
 .wrapper{
-  background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-  background-repeat: no-repeat;
-  height: 100vh;
+ 
   color: #051937;
-
+  width: 80%;
+  margin: auto;
+  font-family: 'Merriweather',Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+  margin-top: 50%;;
+}
+h1{
+  font-size: 5em;
+  color: #00bf72;
+  margin-top: 100%;
+}
+.navbar{
+  background-color: #004d7a;
+  width: 80%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
 }
 .switch-links{
   text-align: center;
   padding: 1em 0;
 }
 #switch-layout{
+  margin-bottom: 1.3em;
+  font-size: 2rem;
+  display: block;
+}
+.fa-circle{
+  color: #051937;
+}
+.fa-user{
+  font-size: 2rem;
+  color: #00bf72;
+}
+.fa-stack{
   margin-bottom: 1.3rem;
 }
-.navbar-links li{
-  border: 1px solid #a8eb12;
-  border-radius: 25px;
-  padding: 1.1em;
+.navbar-links{
+  width: 80%;
   margin: 0 auto;
+}
+.navbar-links li{
+  display: inline-block;
+  border: 1px solid #051937;
+  border-radius: 5px;
+  padding: 0.6em;
+  margin: .6em;
   text-align: center;
-  margin-bottom: .5em;
+  margin-bottom: .8em;
+
+}
+.navbar-links, p {
+   font-family: 'Raleway',
+  Verdana,
+  Geneva,
+  Tahoma,
+  sans-serif;
+  ;
 }
 ul{
   list-style-type: none;
-}
-ul li{
-  color: #a8eb12;
 }
 
 
@@ -46,16 +93,30 @@ a{
   color: #051937;
   font-size: 2em;
 }
-#switch-layout {
+a:hover {
   color: #a8eb12;
 }
 article{
   display: inline-block;
   padding: .3em;
-  margin: .6em;
+  margin: 2.6em;
   text-align: center;
-}
+  font-size: 1.8em;
+  border: 2px solid #051937;
+  border-radius: 15px;
+  background-color: #f7f7f7;
+  opacity: 0.9;
 
+
+}
+h2{
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #051937; 
+}
+p{
+  line-height: 1.3;
+}
 footer{
   margin-top: .4rem;
   
@@ -65,4 +126,12 @@ footer p{
   position: relative;
   padding-top: 3em;
   
+}
+
+@media only screen and (min-width: 769px){
+
+}
+
+@media only screen and (min-width: 1025px){
+
 }
